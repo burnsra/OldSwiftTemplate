@@ -51,11 +51,27 @@
 			isa = PBXGroup;
 			children = (
 				00B7C6261CAEF22200D54623 /* AppDelegate.swift */,
-				00B7C6281CAEF22200D54623 /* Assets.xcassets */,
-				00B7C62A1CAEF22200D54623 /* MainMenu.xib */,
-				00B7C62D1CAEF22200D54623 /* Info.plist */,
+				00DA78301CAEF672004D5272 /* Resources */,
+				00DA782F1CAEF668004D5272 /* UI */,
 			);
 			path = SwiftTemplate;
+			sourceTree = "<group>";
+		};
+		00DA782F1CAEF668004D5272 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				00B7C6281CAEF22200D54623 /* Assets.xcassets */,
+				00B7C62A1CAEF22200D54623 /* MainMenu.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		00DA78301CAEF672004D5272 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00B7C62D1CAEF22200D54623 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
