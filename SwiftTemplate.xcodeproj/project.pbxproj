@@ -11,6 +11,7 @@
 		00B7C6291CAEF22200D54623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C6281CAEF22200D54623 /* Assets.xcassets */; };
 		00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C62A1CAEF22200D54623 /* MainMenu.xib */; };
 		00D421271CAF53D100C1A7D6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D421261CAF53D100C1A7D6 /* Global.swift */; };
+		00D4212B1CAF5F9000C1A7D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D4212D1CAF5F9000C1A7D6 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		00B7C62B1CAEF22200D54623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		00B7C62D1CAEF22200D54623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D421261CAF53D100C1A7D6 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		00D4212C1CAF5F9000C1A7D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				00B7C62D1CAEF22200D54623 /* Info.plist */,
+				00D4212D1CAF5F9000C1A7D6 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B7C6291CAEF22200D54623 /* Assets.xcassets in Resources */,
+				00D4212B1CAF5F9000C1A7D6 /* Localizable.strings in Resources */,
 				00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +173,14 @@
 				00B7C62B1CAEF22200D54623 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		00D4212D1CAF5F9000C1A7D6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D4212C1CAF5F9000C1A7D6 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
