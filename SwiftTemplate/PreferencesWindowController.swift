@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 protocol PreferencesWindowControllerDelegate {
     func preferencesUpdated(sender: AnyObject?)
@@ -50,17 +51,20 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
 
     @IBAction func launchAtLoginClicked(sender: NSButton) {
         NSLog("\(self.dynamicType) \t \(#function)")
-        NSLog("\(sender.title) == \(sender.state)")
 
+        let identifier = "\(Global.Bundle.idenitifier)Launcher"
         let userDefaults = NSUserDefaults.standardUserDefaults()
 
         switch sender.state {
         case 1:
             userDefaults.setBool(true, forKey: "launchAtLogin")
+            SMLoginItemSetEnabled(identifier, true)
         case 0:
             userDefaults.setBool(false, forKey: "launchAtLogin")
+            SMLoginItemSetEnabled(identifier, false)
         default:
             userDefaults.setBool(false, forKey: "launchAtLogin")
+            SMLoginItemSetEnabled(identifier, false)
         }
     }
 }

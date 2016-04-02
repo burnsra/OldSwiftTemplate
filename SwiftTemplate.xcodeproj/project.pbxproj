@@ -10,6 +10,9 @@
 		007D11591CAFF74400346712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D11581CAFF74400346712 /* AppDelegate.swift */; };
 		007D115B1CAFF74400346712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007D115A1CAFF74400346712 /* Assets.xcassets */; };
 		007D115E1CAFF74400346712 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007D115C1CAFF74400346712 /* MainMenu.xib */; };
+		007D11661CAFFA9400346712 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D11651CAFFA9400346712 /* Cocoa.framework */; };
+		007D11681CAFFA9D00346712 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007D11671CAFFA9D00346712 /* ServiceManagement.framework */; };
+		007D116A1CAFFAB300346712 /* SwiftTemplateLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 007D11561CAFF74400346712 /* SwiftTemplateLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		00B7C6271CAEF22200D54623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7C6261CAEF22200D54623 /* AppDelegate.swift */; };
 		00B7C6291CAEF22200D54623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C6281CAEF22200D54623 /* Assets.xcassets */; };
 		00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C62A1CAEF22200D54623 /* MainMenu.xib */; };
@@ -20,6 +23,19 @@
 		00D421341CAF770200C1A7D6 /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D421321CAF770200C1A7D6 /* PreferencesWindowController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		007D11691CAFFAA300346712 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				007D116A1CAFFAB300346712 /* SwiftTemplateLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		007D11561CAFF74400346712 /* SwiftTemplateLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplateLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007D11581CAFF74400346712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +44,8 @@
 		007D115F1CAFF74400346712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		007D11631CAFF7F000346712 /* SwiftTemplateLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftTemplateLauncher.entitlements; sourceTree = "<group>"; };
 		007D11641CAFF7F600346712 /* SwiftTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftTemplate.entitlements; sourceTree = "<group>"; };
+		007D11651CAFFA9400346712 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		007D11671CAFFA9D00346712 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		00B7C6231CAEF22200D54623 /* SwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B7C6261CAEF22200D54623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B7C6281CAEF22200D54623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007D11661CAFFA9400346712 /* Cocoa.framework in Frameworks */,
+				007D11681CAFFA9D00346712 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +93,8 @@
 		00B7C61A1CAEF22200D54623 = {
 			isa = PBXGroup;
 			children = (
+				007D11651CAFFA9400346712 /* Cocoa.framework */,
+				007D11671CAFFA9D00346712 /* ServiceManagement.framework */,
 				00B7C6251CAEF22200D54623 /* SwiftTemplate */,
 				007D11571CAFF74400346712 /* SwiftTemplateLauncher */,
 				00B7C6241CAEF22200D54623 /* Products */,
@@ -164,6 +186,7 @@
 				00B7C61F1CAEF22200D54623 /* Sources */,
 				00B7C6201CAEF22200D54623 /* Frameworks */,
 				00B7C6211CAEF22200D54623 /* Resources */,
+				007D11691CAFFAA300346712 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -304,6 +327,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftTemplateLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -317,6 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftTemplateLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

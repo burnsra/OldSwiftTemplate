@@ -12,7 +12,18 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let launcherAppIdentifier = "\(Global.Bundle.idenitifier)Launcher"
+
+        var launchAtLogin = false
+        for app in NSWorkspace.sharedWorkspace().runningApplications {
+            if app.bundleIdentifier == launcherAppIdentifier {
+                launchAtLogin = true
+            }
+        }
+
+        if launchAtLogin {
+            NSDistributedNotificationCenter.defaultCenter().postNotificationName("killme", object: NSBundle.mainBundle().bundleIdentifier!)
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
