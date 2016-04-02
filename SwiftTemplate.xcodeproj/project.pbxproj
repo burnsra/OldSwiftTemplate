@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007D11591CAFF74400346712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007D11581CAFF74400346712 /* AppDelegate.swift */; };
+		007D115B1CAFF74400346712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007D115A1CAFF74400346712 /* Assets.xcassets */; };
+		007D115E1CAFF74400346712 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007D115C1CAFF74400346712 /* MainMenu.xib */; };
 		00B7C6271CAEF22200D54623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7C6261CAEF22200D54623 /* AppDelegate.swift */; };
 		00B7C6291CAEF22200D54623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C6281CAEF22200D54623 /* Assets.xcassets */; };
 		00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C62A1CAEF22200D54623 /* MainMenu.xib */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007D11561CAFF74400346712 /* SwiftTemplateLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplateLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		007D11581CAFF74400346712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		007D115A1CAFF74400346712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		007D115D1CAFF74400346712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		007D115F1CAFF74400346712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B7C6231CAEF22200D54623 /* SwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B7C6261CAEF22200D54623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B7C6281CAEF22200D54623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		007D11531CAFF74400346712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B7C6201CAEF22200D54623 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007D11571CAFF74400346712 /* SwiftTemplateLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				007D11581CAFF74400346712 /* AppDelegate.swift */,
+				007D115A1CAFF74400346712 /* Assets.xcassets */,
+				007D115C1CAFF74400346712 /* MainMenu.xib */,
+				007D115F1CAFF74400346712 /* Info.plist */,
+			);
+			path = SwiftTemplateLauncher;
+			sourceTree = "<group>";
+		};
 		00B7C61A1CAEF22200D54623 = {
 			isa = PBXGroup;
 			children = (
 				00B7C6251CAEF22200D54623 /* SwiftTemplate */,
+				007D11571CAFF74400346712 /* SwiftTemplateLauncher */,
 				00B7C6241CAEF22200D54623 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				00B7C6231CAEF22200D54623 /* SwiftTemplate.app */,
+				007D11561CAFF74400346712 /* SwiftTemplateLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +136,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		007D11551CAFF74400346712 /* SwiftTemplateLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 007D11601CAFF74400346712 /* Build configuration list for PBXNativeTarget "SwiftTemplateLauncher" */;
+			buildPhases = (
+				007D11521CAFF74400346712 /* Sources */,
+				007D11531CAFF74400346712 /* Frameworks */,
+				007D11541CAFF74400346712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTemplateLauncher;
+			productName = SwiftTemplateLauncher;
+			productReference = 007D11561CAFF74400346712 /* SwiftTemplateLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		00B7C6221CAEF22200D54623 /* SwiftTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00B7C6301CAEF22200D54623 /* Build configuration list for PBXNativeTarget "SwiftTemplate" */;
@@ -135,6 +180,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Robert Burns";
 				TargetAttributes = {
+					007D11551CAFF74400346712 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					00B7C6221CAEF22200D54623 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -154,11 +202,21 @@
 			projectRoot = "";
 			targets = (
 				00B7C6221CAEF22200D54623 /* SwiftTemplate */,
+				007D11551CAFF74400346712 /* SwiftTemplateLauncher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		007D11541CAFF74400346712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007D115B1CAFF74400346712 /* Assets.xcassets in Resources */,
+				007D115E1CAFF74400346712 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B7C6211CAEF22200D54623 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +231,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		007D11521CAFF74400346712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007D11591CAFF74400346712 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B7C61F1CAEF22200D54623 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +253,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		007D115C1CAFF74400346712 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				007D115D1CAFF74400346712 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		00B7C62A1CAEF22200D54623 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -206,6 +280,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		007D11611CAFF74400346712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftTemplateLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftTemplateLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		007D11621CAFF74400346712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftTemplateLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftTemplateLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		00B7C62E1CAEF22200D54623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +413,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		007D11601CAFF74400346712 /* Build configuration list for PBXNativeTarget "SwiftTemplateLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				007D11611CAFF74400346712 /* Debug */,
+				007D11621CAFF74400346712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		00B7C61E1CAEF22200D54623 /* Build configuration list for PBXProject "SwiftTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
