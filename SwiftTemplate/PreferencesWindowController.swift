@@ -14,6 +14,8 @@ protocol PreferencesWindowControllerDelegate {
 
 class PreferencesWindowController: NSWindowController, NSWindowDelegate {
 
+    @IBOutlet weak var launchAtLoginButton: NSButton!
+
     var delegate: PreferencesWindowControllerDelegate?
 
     override var windowNibName : String! {
@@ -31,6 +33,14 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
 
     override func windowDidLoad() {
         super.windowDidLoad()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+
+        switch userDefaults.boolForKey("launchAtLogin") {
+        case true:
+            launchAtLoginButton.state = 1
+        case false:
+            launchAtLoginButton.state = 0
+        }
     }
 
     func windowWillClose(notification: NSNotification) {
@@ -38,4 +48,19 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
         delegate?.preferencesUpdated(self)
     }
 
+    @IBAction func launchAtLoginClicked(sender: NSButton) {
+        NSLog("\(self.dynamicType) \t \(#function)")
+        NSLog("\(sender.title) == \(sender.state)")
+
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+
+        switch sender.state {
+        case 1:
+            userDefaults.setBool(true, forKey: "launchAtLogin")
+        case 0:
+            userDefaults.setBool(false, forKey: "launchAtLogin")
+        default:
+            userDefaults.setBool(false, forKey: "launchAtLogin")
+        }
+    }
 }
