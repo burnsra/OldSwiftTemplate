@@ -12,6 +12,7 @@
 		00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C62A1CAEF22200D54623 /* MainMenu.xib */; };
 		00D421271CAF53D100C1A7D6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D421261CAF53D100C1A7D6 /* Global.swift */; };
 		00D4212B1CAF5F9000C1A7D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D4212D1CAF5F9000C1A7D6 /* Localizable.strings */; };
+		00D4212F1CAF636300C1A7D6 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4212E1CAF636300C1A7D6 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		00B7C62D1CAEF22200D54623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D421261CAF53D100C1A7D6 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		00D4212C1CAF5F9000C1A7D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00D4212E1CAF636300C1A7D6 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				00B7C6261CAEF22200D54623 /* AppDelegate.swift */,
 				00D421281CAF53D900C1A7D6 /* Constants */,
+				00D421301CAF636E00C1A7D6 /* Controllers */,
 				00DA78301CAEF672004D5272 /* Resources */,
 				00DA782F1CAEF668004D5272 /* UI */,
 			);
@@ -68,6 +71,14 @@
 				00D421261CAF53D100C1A7D6 /* Global.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		00D421301CAF636E00C1A7D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00D4212E1CAF636300C1A7D6 /* StatusMenuController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		00DA782F1CAEF668004D5272 /* UI */ = {
@@ -159,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D4212F1CAF636300C1A7D6 /* StatusMenuController.swift in Sources */,
 				00D421271CAF53D100C1A7D6 /* Global.swift in Sources */,
 				00B7C6271CAEF22200D54623 /* AppDelegate.swift in Sources */,
 			);

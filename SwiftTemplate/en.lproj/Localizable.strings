@@ -5,3 +5,8 @@
   Created by Robert Burns on 4/1/16.
   Copyright © 2016 Robert Burns. All rights reserved.
 */
+
+menu_about = "About";
+menu_documentation = "Documentation...";
+menu_preferences = "Preferences...";
+menu_quit = "Quit";

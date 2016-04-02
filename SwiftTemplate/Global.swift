@@ -17,4 +17,13 @@ struct Global {
         static let idenitifier: String = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleIdentifier") as! String
     }
 
+    struct Menu {
+        static let about: Int = 1001
+        static let documentation: Int = 1002
+        static let preferences: Int = 1003
+        static let quit: Int = 1004
+    }
+
+    static let documentation_url: String = "https://github.com/burnsra/\(Bundle.name)"
+
 }
