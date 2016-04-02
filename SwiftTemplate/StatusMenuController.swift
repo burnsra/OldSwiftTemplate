@@ -8,9 +8,10 @@
 
 import Cocoa
 
-class StatusMenuController: NSObject {
+class StatusMenuController: NSObject, PreferencesWindowControllerDelegate {
 
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    var preferencesWindowController: PreferencesWindowController!
 
     override func awakeFromNib() {
         var item_about: NSMenuItem
@@ -57,6 +58,9 @@ class StatusMenuController: NSObject {
         menu.addItem(NSMenuItem.separatorItem())
         menu.addItem(item_quit)
 
+        preferencesWindowController = PreferencesWindowController()
+        preferencesWindowController.delegate = self
+
     }
 
     @IBAction func clickAbout(sender: NSMenuItem) {
@@ -74,11 +78,16 @@ class StatusMenuController: NSObject {
 
     @IBAction func clickPreferences(sender: NSMenuItem) {
         NSLog("\(self.dynamicType) \t \(#function)")
+        preferencesWindowController.showWindow(nil)
     }
 
     @IBAction func clickQuit(sender: NSMenuItem) {
         NSLog("\(self.dynamicType) \t \(#function)")
         NSApplication.sharedApplication().terminate(sender)
+    }
+
+    func preferencesUpdated(sender: AnyObject?) {
+        NSLog("\(self.dynamicType) \t \(#function)")
     }
 
 

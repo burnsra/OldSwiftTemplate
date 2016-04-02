@@ -10,3 +10,5 @@ menu_about = "About";
 menu_documentation = "Documentation...";
 menu_preferences = "Preferences...";
 menu_quit = "Quit";
+
+window_preferences_title = "Preferences Window";
