@@ -10,6 +10,7 @@
 		00B7C6271CAEF22200D54623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7C6261CAEF22200D54623 /* AppDelegate.swift */; };
 		00B7C6291CAEF22200D54623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C6281CAEF22200D54623 /* Assets.xcassets */; };
 		00B7C62C1CAEF22200D54623 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B7C62A1CAEF22200D54623 /* MainMenu.xib */; };
+		00D421271CAF53D100C1A7D6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D421261CAF53D100C1A7D6 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		00B7C6281CAEF22200D54623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B7C62B1CAEF22200D54623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		00B7C62D1CAEF22200D54623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D421261CAF53D100C1A7D6 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +53,19 @@
 			isa = PBXGroup;
 			children = (
 				00B7C6261CAEF22200D54623 /* AppDelegate.swift */,
+				00D421281CAF53D900C1A7D6 /* Constants */,
 				00DA78301CAEF672004D5272 /* Resources */,
 				00DA782F1CAEF668004D5272 /* UI */,
 			);
 			path = SwiftTemplate;
+			sourceTree = "<group>";
+		};
+		00D421281CAF53D900C1A7D6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				00D421261CAF53D100C1A7D6 /* Global.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		00DA782F1CAEF668004D5272 /* UI */ = {
@@ -144,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D421271CAF53D100C1A7D6 /* Global.swift in Sources */,
 				00B7C6271CAEF22200D54623 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
