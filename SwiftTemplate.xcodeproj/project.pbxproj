@@ -26,6 +26,8 @@
 		007D115A1CAFF74400346712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007D115D1CAFF74400346712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		007D115F1CAFF74400346712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007D11631CAFF7F000346712 /* SwiftTemplateLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftTemplateLauncher.entitlements; sourceTree = "<group>"; };
+		007D11641CAFF7F600346712 /* SwiftTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftTemplate.entitlements; sourceTree = "<group>"; };
 		00B7C6231CAEF22200D54623 /* SwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B7C6261CAEF22200D54623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B7C6281CAEF22200D54623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		007D11571CAFF74400346712 /* SwiftTemplateLauncher */ = {
 			isa = PBXGroup;
 			children = (
+				007D11631CAFF7F000346712 /* SwiftTemplateLauncher.entitlements */,
 				007D11581CAFF74400346712 /* AppDelegate.swift */,
 				007D115A1CAFF74400346712 /* Assets.xcassets */,
 				007D115C1CAFF74400346712 /* MainMenu.xib */,
@@ -88,6 +91,7 @@
 		00B7C6251CAEF22200D54623 /* SwiftTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				007D11641CAFF7F600346712 /* SwiftTemplate.entitlements */,
 				00B7C6261CAEF22200D54623 /* AppDelegate.swift */,
 				00D421281CAF53D900C1A7D6 /* Constants */,
 				00D421301CAF636E00C1A7D6 /* Controllers */,
@@ -182,9 +186,19 @@
 				TargetAttributes = {
 					007D11551CAFF74400346712 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					00B7C6221CAEF22200D54623 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -284,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftTemplateLauncher/SwiftTemplateLauncher.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftTemplateLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -296,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftTemplateLauncher/SwiftTemplateLauncher.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftTemplateLauncher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -390,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftTemplate/SwiftTemplate.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -402,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftTemplate/SwiftTemplate.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftTemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
