@@ -78,14 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004DED4B1CB0006000B359BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				007D115F1CAFF74400346712 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		004DED4C1CB0006E00B359BE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				007D115A1CAFF74400346712 /* Assets.xcassets */,
+				007D115C1CAFF74400346712 /* MainMenu.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		007D11571CAFF74400346712 /* SwiftTemplateLauncher */ = {
 			isa = PBXGroup;
 			children = (
 				007D11631CAFF7F000346712 /* SwiftTemplateLauncher.entitlements */,
 				007D11581CAFF74400346712 /* AppDelegate.swift */,
-				007D115A1CAFF74400346712 /* Assets.xcassets */,
-				007D115C1CAFF74400346712 /* MainMenu.xib */,
-				007D115F1CAFF74400346712 /* Info.plist */,
+				004DED4B1CB0006000B359BE /* Resources */,
+				004DED4C1CB0006E00B359BE /* UI */,
 			);
 			path = SwiftTemplateLauncher;
 			sourceTree = "<group>";
@@ -463,6 +479,7 @@
 				007D11621CAFF74400346712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00B7C61E1CAEF22200D54623 /* Build configuration list for PBXProject "SwiftTemplate" */ = {
 			isa = XCConfigurationList;
